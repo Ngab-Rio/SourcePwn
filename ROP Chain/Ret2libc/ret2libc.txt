@@ -1,0 +1,2 @@
+Biasanya ret2libc menggunakan fungsi bawaan dari bahasa C seperti baselibc,system(),exit(),binsh 
+biasanya payload nya = padding + fungsiC + fungsiC + binsh

@@ -1,0 +1,3 @@
+di challenge kali ini kerentanannya pada pengembalian fungsi admins_only(ret2win), nah untuk pengerjaan pertama kita
+harus mengetahui dulu padding nya berapa agar dia overflow, kemudian kita mencari ret address dengan cara 
+"objdump -d <nama-filegrep ret" , kemudian kita cari alamat dari fungsi admins_only,jalankan solv.py 
