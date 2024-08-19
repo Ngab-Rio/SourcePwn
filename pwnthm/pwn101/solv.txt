@@ -1,2 +1,0 @@
-ini merupakan buffer overflow, kerentanan ini hanya perlu memasukkan karalter sembarang sampai dia melebihi ruang memori 
-contoh Payload:"AAA%AAsAABAA$AAnAACAA-AA(AADAA;AA)AAEAAaAA0AAFAAbAA1AAGAAcAA2AAHAAdAA3AAIAAeAA4AAJAAfAA5AAKAAgAA6AAL" 

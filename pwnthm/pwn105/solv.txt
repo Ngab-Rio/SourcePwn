@@ -1,4 +1,0 @@
-ini integer overflow, kita hanya perlu menginputkan bilangan sembarang dengan digit yang melebihi buffer
-
-
-
